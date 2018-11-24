@@ -27,8 +27,8 @@ Note: Based of Microsoft sample: %PROJECT_ROOT%\hid\hidusbfx2\sys\driver.c
 --*/
 
 #include <vjoy.h>
-#include <string.h>
-#include <stdlib.h>
+#include <string>
+#include <cstdlib>
 #include <rawpdo.h>
 
 

@@ -1,6 +1,6 @@
 echo off
 SET VS=14.0
-SET BUILDER=%ProgramFiles(x86)%\MSBuild\%VS%\Bin\MSBuild.exe
+SET BUILDER=C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe
 SET Target64=x64\Release
 SET Target32=Win32\Release
 SET DigiCertUtil=%USERPROFILE%\DESKTOP\DigiCertUtil.exe
