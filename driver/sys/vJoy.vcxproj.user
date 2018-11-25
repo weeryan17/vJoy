@@ -2,7 +2,8 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <SignMode>TestSign</SignMode>
-    <ProductionCertificate>CN=Shaul Eizikovich, O=Shaul Eizikovich, L=Hod HaSharon, S=Tel Aviv, C=IL | 6D5471DF6BBFAFA5D5900C88C08DF0E9C513690A</ProductionCertificate>
+    <ProductionCertificate>
+    </ProductionCertificate>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_CPP|Win32'">
     <SignMode>TestSign</SignMode>
