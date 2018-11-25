@@ -354,7 +354,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>setupapi.lib;hid.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(WindowsSdkDir)lib\$(DDKSpec)\km\$(DDKPlatform);$(WindowsSdkLibraryPath);$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\lib\x86;$(WindowsSdkDir)lib\$(DDKSpec)\km\$(DDKPlatform);$(WindowsSdkLibraryPath);$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <GenerateMapFile>true</GenerateMapFile>
     </Link>
