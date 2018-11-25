@@ -89,6 +89,37 @@ Return Value:
     //WDF_OBJECT_ATTRIBUTES	attributes;
     WDFDRIVER				hDriver;
 
+	//
+	//// Create a framework driver object to represent our driver.
+	//
+	//   Register AddDevice callback function
+	//
+	WDF_DRIVER_CONFIG_INIT(&config, vJoyEvtDeviceAdd);
+	//
+	//   Register a cleanup callback so that we can call WPP_CLEANUP when
+	//   the framework driver object is deleted during driver unload.
+	//
+
+	//WDF_OBJECT_ATTRIBUTES_INIT(&attributes);
+	//attributes.EvtCleanupCallback = vJoyEvtDriverContextCleanup;
+
+	// Driver and its decendents are set to execute at PASSIVE_LEVEL
+	// This will make the synchronization of the event handlers simpler
+
+	//attributes.ExecutionLevel = WdfExecutionLevelPassive;
+
+	status = WdfDriverCreate(DriverObject,
+		RegistryPath,
+		/*&attributes*/ WDF_NO_OBJECT_ATTRIBUTES,
+		&config,
+		&hDriver);
+	if (!NT_SUCCESS(status))
+	{
+		KdPrint(("WdfDriverCreate failed with status 0x%x\n", status));
+		LogEventWithStatus(ERRLOG_DRIVER_FAILED, L"WdfDriverCreate", DriverObject, status);
+		return status;
+	};
+
     //
     // Initialize WPP Tracing
     //
@@ -113,39 +144,6 @@ Return Value:
 		LogEventWithStatus(ERRLOG_DRIVER_FAILED ,L"WdfCollectionCreate", DriverObject, status);
         return status;
     }
-
-
-    //
-    //// Create a framework driver object to represent our driver.
-	//
-	//   Register AddDevice callback function
-    //
-	WDF_DRIVER_CONFIG_INIT(&config, vJoyEvtDeviceAdd);
-	//
-    //   Register a cleanup callback so that we can call WPP_CLEANUP when
-    //   the framework driver object is deleted during driver unload.
-    //
-    
-	//WDF_OBJECT_ATTRIBUTES_INIT(&attributes);
-    //attributes.EvtCleanupCallback = vJoyEvtDriverContextCleanup;
-
-	// Driver and its decendents are set to execute at PASSIVE_LEVEL
-	// This will make the synchronization of the event handlers simpler
-	
-	//attributes.ExecutionLevel = WdfExecutionLevelPassive;
-
-    status = WdfDriverCreate(DriverObject,
-                            RegistryPath,
-                            /*&attributes*/ WDF_NO_OBJECT_ATTRIBUTES,
-                            &config,
-                            &hDriver);
-    if (!NT_SUCCESS(status)) 
-	{
-        KdPrint( ("WdfDriverCreate failed with status 0x%x\n", status));
-		LogEventWithStatus(ERRLOG_DRIVER_FAILED  ,L"WdfDriverCreate", DriverObject, status);
-		return status;
-	};
-
 
     status = WdfWaitLockCreate(WDF_NO_OBJECT_ATTRIBUTES, &vJoyDeviceCollectionLock);
     if (!NT_SUCCESS(status))
