@@ -27,6 +27,9 @@
     <Inf Include="vjoy.inx">
       <Filter>Driver Files</Filter>
     </Inf>
+    <Inf Include="vjoy.inf">
+      <Filter>Driver Files</Filter>
+    </Inf>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="hidReportDesc.h">

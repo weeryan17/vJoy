@@ -4,7 +4,7 @@ SET BUILDER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBui
 SET Target64=x64\Release
 SET Target32=Win32\Release
 SET DigiCertUtil=%USERPROFILE%\DESKTOP\DigiCertUtil.exe
-SET InnoCompiler=%ProgramFiles(x86)%\Inno Setup 5\ISCC.exe
+SET InnoCompiler=%ProgramFiles(x86)%\Inno Setup 6\ISCC.exe
 
 
 :build32

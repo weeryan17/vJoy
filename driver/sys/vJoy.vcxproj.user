@@ -1,79 +1,141 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <SignMode>Off</SignMode>
+    <SignMode>TestSign</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
+    <TestCertificate>CN="WDKTestCert thewe,131875729507243584" | 29295584E60F700828C07D9BA9B356647B83800F</TestCertificate>
+    <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
+    <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_CPP|Win32'">
-    <SignMode>Off</SignMode>
+    <SignMode>TestSign</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
+    <TestCertificate>CN="WDKTestCert thewe,131875729507243584" | 29295584E60F700828C07D9BA9B356647B83800F</TestCertificate>
+    <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
+    <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <SignMode>Off</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
+    <TestCertificate>
+    </TestCertificate>
+    <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
+    <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_CPP|Win32'">
     <SignMode>Off</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
+    <TestCertificate>
+    </TestCertificate>
+    <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
+    <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <SignMode>Off</SignMode>
+    <SignMode>TestSign</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
     <DebugDeployment>True</DebugDeployment>
-    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
+    <TestCertificate>CN="WDKTestCert thewe,131875729507243584" | 29295584E60F700828C07D9BA9B356647B83800F</TestCertificate>
+    <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_CPP|x64'">
-    <SignMode>Off</SignMode>
+    <SignMode>TestSign</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
     <DebugDeployment>True</DebugDeployment>
-    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
+    <TestCertificate>CN="WDKTestCert thewe,131875729507243584" | 29295584E60F700828C07D9BA9B356647B83800F</TestCertificate>
+    <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <SignMode>Off</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
+    <TestCertificate>
+    </TestCertificate>
+    <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
+    <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_CPP|x64'">
     <SignMode>Off</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
+    <TestCertificate>
+    </TestCertificate>
+    <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
+    <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <SignMode>Off</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
+    <TestCertificate>
+    </TestCertificate>
+    <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
+    <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_CPP|ARM64'">
     <SignMode>Off</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
+    <TestCertificate>
+    </TestCertificate>
+    <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
+    <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <SignMode>Off</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
+    <TestCertificate>
+    </TestCertificate>
+    <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
+    <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_CPP|ARM'">
     <SignMode>Off</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
+    <TestCertificate>
+    </TestCertificate>
+    <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
+    <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
-    <SignMode>Off</SignMode>
+    <SignMode>TestSign</SignMode>
+    <ProductionCertificate>
+    </ProductionCertificate>
+    <TestCertificate>CN="WDKTestCert thewe,131875729507243584" | 29295584E60F700828C07D9BA9B356647B83800F</TestCertificate>
+    <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
+    <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
-    <SignMode>Off</SignMode>
+    <SignMode>TestSign</SignMode>
+    <ProductionCertificate>
+    </ProductionCertificate>
+    <TestCertificate>CN="WDKTestCert thewe,131875729507243584" | 29295584E60F700828C07D9BA9B356647B83800F</TestCertificate>
+    <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
+    <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_CPP|ARM'">
-    <SignMode>Off</SignMode>
+    <SignMode>TestSign</SignMode>
+    <ProductionCertificate>
+    </ProductionCertificate>
+    <TestCertificate>CN="WDKTestCert thewe,131875729507243584" | 29295584E60F700828C07D9BA9B356647B83800F</TestCertificate>
+    <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
+    <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_CPP|ARM64'">
-    <SignMode>Off</SignMode>
+    <SignMode>TestSign</SignMode>
+    <ProductionCertificate>
+    </ProductionCertificate>
+    <TestCertificate>CN="WDKTestCert thewe,131875729507243584" | 29295584E60F700828C07D9BA9B356647B83800F</TestCertificate>
+    <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
+    <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
   </PropertyGroup>
 </Project>
