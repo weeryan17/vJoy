@@ -4,7 +4,7 @@
     <SignMode>TestSign</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
-    <TestCertificate>CN="WDKTestCert thewe,131875729507243584" | 29295584E60F700828C07D9BA9B356647B83800F</TestCertificate>
+    <TestCertificate>CN="WDKTestCert thewe,132069912563824427" | 1B4B45B17E8F8F5F3063160ACAB4AB28104B4ABD</TestCertificate>
     <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
     <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
   </PropertyGroup>
@@ -12,25 +12,23 @@
     <SignMode>TestSign</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
-    <TestCertificate>CN="WDKTestCert thewe,131875729507243584" | 29295584E60F700828C07D9BA9B356647B83800F</TestCertificate>
+    <TestCertificate>CN="WDKTestCert thewe,132069912563824427" | 1B4B45B17E8F8F5F3063160ACAB4AB28104B4ABD</TestCertificate>
     <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
     <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <SignMode>Off</SignMode>
+    <SignMode>TestSign</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
-    <TestCertificate>
-    </TestCertificate>
+    <TestCertificate>CN="WDKTestCert thewe,132069912563824427" | 1B4B45B17E8F8F5F3063160ACAB4AB28104B4ABD</TestCertificate>
     <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
     <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_CPP|Win32'">
-    <SignMode>Off</SignMode>
+    <SignMode>TestSign</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
-    <TestCertificate>
-    </TestCertificate>
+    <TestCertificate>CN="WDKTestCert thewe,132069912563824427" | 1B4B45B17E8F8F5F3063160ACAB4AB28104B4ABD</TestCertificate>
     <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
     <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
   </PropertyGroup>
@@ -40,7 +38,7 @@
     </ProductionCertificate>
     <DebugDeployment>True</DebugDeployment>
     <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
-    <TestCertificate>CN="WDKTestCert thewe,131875729507243584" | 29295584E60F700828C07D9BA9B356647B83800F</TestCertificate>
+    <TestCertificate>CN="WDKTestCert thewe,132069912563824427" | 1B4B45B17E8F8F5F3063160ACAB4AB28104B4ABD</TestCertificate>
     <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_CPP|x64'">
@@ -49,60 +47,54 @@
     </ProductionCertificate>
     <DebugDeployment>True</DebugDeployment>
     <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
-    <TestCertificate>CN="WDKTestCert thewe,131875729507243584" | 29295584E60F700828C07D9BA9B356647B83800F</TestCertificate>
+    <TestCertificate>CN="WDKTestCert thewe,132069912563824427" | 1B4B45B17E8F8F5F3063160ACAB4AB28104B4ABD</TestCertificate>
     <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <SignMode>Off</SignMode>
+    <SignMode>TestSign</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
-    <TestCertificate>
-    </TestCertificate>
+    <TestCertificate>CN="WDKTestCert thewe,132069912563824427" | 1B4B45B17E8F8F5F3063160ACAB4AB28104B4ABD</TestCertificate>
     <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
     <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_CPP|x64'">
-    <SignMode>Off</SignMode>
+    <SignMode>TestSign</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
-    <TestCertificate>
-    </TestCertificate>
+    <TestCertificate>CN="WDKTestCert thewe,132069912563824427" | 1B4B45B17E8F8F5F3063160ACAB4AB28104B4ABD</TestCertificate>
     <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
     <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
-    <SignMode>Off</SignMode>
+    <SignMode>TestSign</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
-    <TestCertificate>
-    </TestCertificate>
+    <TestCertificate>CN="WDKTestCert thewe,132069912563824427" | 1B4B45B17E8F8F5F3063160ACAB4AB28104B4ABD</TestCertificate>
     <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
     <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_CPP|ARM64'">
-    <SignMode>Off</SignMode>
+    <SignMode>TestSign</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
-    <TestCertificate>
-    </TestCertificate>
+    <TestCertificate>CN="WDKTestCert thewe,132069912563824427" | 1B4B45B17E8F8F5F3063160ACAB4AB28104B4ABD</TestCertificate>
     <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
     <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
-    <SignMode>Off</SignMode>
+    <SignMode>TestSign</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
-    <TestCertificate>
-    </TestCertificate>
+    <TestCertificate>CN="WDKTestCert thewe,132069912563824427" | 1B4B45B17E8F8F5F3063160ACAB4AB28104B4ABD</TestCertificate>
     <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
     <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_CPP|ARM'">
-    <SignMode>Off</SignMode>
+    <SignMode>TestSign</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
-    <TestCertificate>
-    </TestCertificate>
+    <TestCertificate>CN="WDKTestCert thewe,132069912563824427" | 1B4B45B17E8F8F5F3063160ACAB4AB28104B4ABD</TestCertificate>
     <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
     <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
   </PropertyGroup>
@@ -110,7 +102,7 @@
     <SignMode>TestSign</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
-    <TestCertificate>CN="WDKTestCert thewe,131875729507243584" | 29295584E60F700828C07D9BA9B356647B83800F</TestCertificate>
+    <TestCertificate>CN="WDKTestCert thewe,132069912563824427" | 1B4B45B17E8F8F5F3063160ACAB4AB28104B4ABD</TestCertificate>
     <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
     <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
   </PropertyGroup>
@@ -118,7 +110,7 @@
     <SignMode>TestSign</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
-    <TestCertificate>CN="WDKTestCert thewe,131875729507243584" | 29295584E60F700828C07D9BA9B356647B83800F</TestCertificate>
+    <TestCertificate>CN="WDKTestCert thewe,132069912563824427" | 1B4B45B17E8F8F5F3063160ACAB4AB28104B4ABD</TestCertificate>
     <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
     <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
   </PropertyGroup>
@@ -126,7 +118,7 @@
     <SignMode>TestSign</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
-    <TestCertificate>CN="WDKTestCert thewe,131875729507243584" | 29295584E60F700828C07D9BA9B356647B83800F</TestCertificate>
+    <TestCertificate>CN="WDKTestCert thewe,132069912563824427" | 1B4B45B17E8F8F5F3063160ACAB4AB28104B4ABD</TestCertificate>
     <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
     <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
   </PropertyGroup>
@@ -134,7 +126,7 @@
     <SignMode>TestSign</SignMode>
     <ProductionCertificate>
     </ProductionCertificate>
-    <TestCertificate>CN="WDKTestCert thewe,131875729507243584" | 29295584E60F700828C07D9BA9B356647B83800F</TestCertificate>
+    <TestCertificate>CN="WDKTestCert thewe,132069912563824427" | 1B4B45B17E8F8F5F3063160ACAB4AB28104B4ABD</TestCertificate>
     <DebuggerFlavor>WindowsRemoteDebugger</DebuggerFlavor>
     <RemoteDebuggerServerName>$(COMPUTERNAME)</RemoteDebuggerServerName>
   </PropertyGroup>
